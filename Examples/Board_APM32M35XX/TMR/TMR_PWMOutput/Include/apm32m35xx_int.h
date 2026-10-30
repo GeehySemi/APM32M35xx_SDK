@@ -1,0 +1,64 @@
+/*!
+ * @file        apm32m35xx_int.h
+ *
+ * @brief       This file contains the headers of the interrupt handlers
+ *
+ * @version     V1.0.0
+ *
+ * @date        2024-05-30
+ *
+ * @attention
+ *
+ *  Copyright (C) 2024 Geehy Semiconductor
+ *
+ *  You may not use this file except in compliance with the
+ *  GEEHY COPYRIGHT NOTICE (GEEHY SOFTWARE PACKAGE LICENSE).
+ *
+ *  The program is only for reference, which is distributed in the hope
+ *  that it will be useful and instructional for customers to develop
+ *  their software. Unless required by applicable law or agreed to in
+ *  writing, the program is distributed on an "AS IS" BASIS, WITHOUT
+ *  ANY WARRANTY OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the GEEHY SOFTWARE PACKAGE LICENSE for the governing permissions
+ *  and limitations under the License.
+ */
+
+/* Define to prevent recursive inclusion */
+#ifndef __APM32M35XX_INT_H
+#define __APM32M35XX_INT_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/* Includes */
+#include "apm32m35xx.h"
+
+/** @addtogroup Examples
+  @{
+  */
+
+/** @addtogroup TMR_PWMOutput
+  @{
+  */
+
+/** @defgroup TMR_PWMOutput_INT_Functions INT_Functions
+  @{
+  */
+
+void NMI_Handler(void);
+void HardFault_Handler(void);
+void SVC_Handler(void);
+void PendSV_Handler(void);
+void SysTick_Handler(void);
+
+/**@} end of group TMR_PWMOutput_INT_Functions */
+/**@} end of group TMR_PWMOutput */
+/**@} end of group Examples */
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /*__APM32M35XX_INT_H */
+

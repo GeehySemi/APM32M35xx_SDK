@@ -1,0 +1,5 @@
+Release Notes for APM32M35xx SDK
+
+Update History
+V1.0 / 30-05-2024
+First Release version of APM32M35xx SDK.
